@@ -9,7 +9,7 @@ public interface UserService {
 
 	/**
 	 * 追加用户
-	 * @param user 用户Bean
+	 * @param user 用户信息
 	 * @return id  用户ID
 	 */
 	int add(User user);
