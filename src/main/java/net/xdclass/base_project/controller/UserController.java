@@ -99,4 +99,15 @@ public class UserController {
 		userMapper.update(user);
 		return JsonData.buildSuccess();
 	}
+
+	/**
+	 * 测试事务
+	 * @return JsonData
+	 */
+	@GetMapping("add_account")
+	public Object addAccount() {
+
+		int id = userService.addAccount();
+		return JsonData.buildSuccess(id);
+	}
 }

@@ -14,5 +14,9 @@ public interface UserService {
 	 */
 	int add(User user);
 
-	//public int addAccount();
+	/**
+	 * 追加用户账号
+	 * @return int 用户ID
+	 */
+	int addAccount();
 }
