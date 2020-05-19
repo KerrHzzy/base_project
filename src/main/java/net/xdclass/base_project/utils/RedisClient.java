@@ -5,24 +5,29 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
 /**
- * 功能描述：redis工具类
  * @author hdz
- */
+ * @ClassName RedisClient
+ * @Description Redis操作工具类
+ * @Date 2020/05/19 13:40
+ * @Version 1.0
+ **/
 @Component
 public class RedisClient {
 
     /**
-     * jdbcTemplate
-     */
+     * @Description jdbcTemplate
+     **/
     @Autowired
     private StringRedisTemplate redisTpl;
 
     /**
-     * 功能描述：设置key-value到redis中
-     * @param key    key
-     * @param value  值
+     * @author hdz
+     * @Description 设置key-value到redis中
+     * @Date 13:36 2020/05/19
+     * @param key key
+     * @param value 值
      * @return boolean true 成功 false 失败
-     */
+     **/
     public boolean set(String key, String value) {
 
         try {
@@ -35,10 +40,12 @@ public class RedisClient {
     }
 
     /**
-     * 功能描述：通过key获取缓存里面的值
-     * @param key    key
+     * @author hdz
+     * @Description 通过key获取缓存里面的值
+     * @Date 13:41 2020/05/19
+     * @param key key
      * @return value 值
-     */
+     **/
     public String get(String key) {
         return redisTpl.opsForValue().get(key);
     }
