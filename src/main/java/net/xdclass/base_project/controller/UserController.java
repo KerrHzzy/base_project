@@ -5,6 +5,8 @@ import net.xdclass.base_project.domain.User;
 import net.xdclass.base_project.mapper.UserMapper;
 import net.xdclass.base_project.service.UserService;
 import net.xdclass.base_project.task.AsyncTask;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +21,8 @@ import java.util.concurrent.Future;
 @RestController
 @RequestMapping("/api/v1/user")
 public class UserController {
+
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
 	private UserService userService;
@@ -139,5 +143,21 @@ public class UserController {
 		long total = end-begin;
 		System.out.println("执行总耗时="+total);
 		return JsonData.buildSuccess(total);
+	}
+
+	/**
+	* @author hdz
+	* @Description 打印各种级别Log(debug、info、warn、error)
+	* @Date 14:39 2020/05/19
+	* @return JsonData
+	**/
+	@GetMapping("log")
+	public Object testLog(){
+
+		logger.debug("this is debug level");
+		logger.info("this is info level ");
+		logger.warn("this is warn level ");
+		logger.error("this is error level");
+		return JsonData.buildSuccess();
 	}
 }
