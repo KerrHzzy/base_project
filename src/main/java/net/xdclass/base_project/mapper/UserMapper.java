@@ -15,7 +15,7 @@ public interface UserMapper {
 	 * keyProperty java对象的属性；keyColumn表示数据库的字段
 	 * @param user 用户bean
 	 */
-	@Insert("INSERT INTO user(name,phone,create_time,age) VALUES(#{name}, #{phone}, #{createTime},#{age})")
+	@Insert("INSERT INTO user(name, phone, create_time, age) VALUES(#{name}, #{phone}, #{createTime}, #{age})")
 	@Options(useGeneratedKeys=true, keyProperty="id", keyColumn="id")
 	void insert(User user);
 

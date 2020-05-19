@@ -36,7 +36,7 @@
             </exclusions>
         </dependency>
 
-        <!-- 引入starter-->
+        <!-- 引入starter -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -49,8 +49,14 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.4</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>2.0.4</version>
+        </dependency>
 
-        <!-- MySQL的JDBC驱动包	-->
+        <!-- MySQL的JDBC驱动包 -->
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
@@ -63,11 +69,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.22</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>2.0.4</version>
         </dependency>
 
     </dependencies>
