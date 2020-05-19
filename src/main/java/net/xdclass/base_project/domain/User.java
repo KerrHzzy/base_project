@@ -13,6 +13,17 @@ public class User {
 	private int age;
 	private Date createTime;
 
+	public User() {
+	}
+
+	public User(int age, String name, String phone, Date createTime) {
+		super();
+		this.age = age;
+		this.name = name;
+		this.phone = phone;
+		this.createTime = createTime;
+	}
+
 	public int getId() {
 		return id;
 	}
