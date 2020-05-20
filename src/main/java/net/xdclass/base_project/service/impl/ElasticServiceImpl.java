@@ -1,8 +1,9 @@
+/*
 package net.xdclass.base_project.service.impl;
 
 import net.xdclass.base_project.dao.ElasticRepository;
 import net.xdclass.base_project.domain.Doc;
-import net.xdclass.base_project.service.IElasticService;
+import net.xdclass.base_project.service.ElasticService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,16 +14,19 @@ import org.springframework.stereotype.Service;
 import java.util.Iterator;
 import java.util.List;
 
+*/
 /**
  * @author hdz
  * @ClassName ElasticServiceImpl
  * @Description 搜索引擎的业务实现类
  * @Date 2020/05/20 9:31
  * @Version 1.0
- **/
-@Service("elasticService")
-public class ElasticServiceImpl implements IElasticService {
+ **//*
 
+@Service("elasticService")
+public class ElasticServiceImpl implements ElasticService {
+*/
+/*
     @Autowired
     private ElasticsearchRestTemplate elasticsearchTemplate;
     @Autowired
@@ -73,5 +77,7 @@ public class ElasticServiceImpl implements IElasticService {
     @Override
     public Page<Doc> query(String key) {
         return elasticRepository.findByContent(key, pageable);
-    }
+    }*//*
+
 }
+*/

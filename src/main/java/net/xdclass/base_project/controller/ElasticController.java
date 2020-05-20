@@ -1,8 +1,9 @@
+/*
 package net.xdclass.base_project.controller;
 
 import lombok.extern.log4j.Log4j2;
 import net.xdclass.base_project.domain.Doc;
-import net.xdclass.base_project.service.IElasticService;
+import net.xdclass.base_project.service.ElasticService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,20 +14,22 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+*/
 /**
  * @author hdz
  * @ClassName ElasticController
  * @Description 搜索引擎业务控制类
  * @Date 2020/05/20 9:38
  * @Version 1.0
- **/
+ **//*
+
 @Log4j2
 @RestController
 @RequestMapping("/elastic")
 public class ElasticController {
 
     @Autowired
-    private IElasticService elasticService;
+    private ElasticService elasticService;
 
     @GetMapping("/init")
     public void init(){
@@ -71,3 +74,4 @@ public class ElasticController {
         return elasticService.findBySecondCode(secondCode);
     }
 }
+*/

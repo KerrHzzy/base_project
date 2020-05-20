@@ -95,6 +95,12 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- 整合消息队列ActiveMQ -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

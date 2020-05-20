@@ -1,3 +1,4 @@
+/*
 package net.xdclass.base_project.service;
 
 import net.xdclass.base_project.domain.Doc;
@@ -6,14 +7,16 @@ import org.springframework.data.domain.Page;
 import java.util.Iterator;
 import java.util.List;
 
+*/
 /**
  * @author hdz
  * @ClassName IElasticService
  * @Description 搜索引擎的业务实现接口类
  * @Date 2020/05/20 9:29
  * @Version 1.0
- **/
-public interface IElasticService {
+ **//*
+
+public interface ElasticService {
 
     void createIndex();
 
@@ -33,3 +36,4 @@ public interface IElasticService {
 
     Page<Doc> query(String key);
 }
+*/
